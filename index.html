@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Copy & Paste</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  </head>
+  <body>
+    <div class="text-center">
+      <label for="enter_ad_name"><h1>Enter Ad Name:</h1></label><br />
+      <input
+        type="text"
+        id="enter_ad_name"
+        oninput="myFunction()"
+      /><br /><br />
+
+      <h3>BUILD:</h3>
+      <p id="build"></p>
+      <button
+        type="button"
+        class="btn btn-info btn-clipboard"
+        data-clipboard-action="copy"
+        data-clipboard-target="#build"
+      >
+        Copy <i class="fa fa-clipboard"></i>
+      </button>
+      <br /><br /><br />
+      <h3>REBUILD:</h3>
+      <p id="rebuild"></p>
+      <button
+        type="button"
+        class="btn btn-info btn-clipboard"
+        data-clipboard-action="copy"
+        data-clipboard-target="#rebuild"
+      >
+        Copy <i class="fa fa-clipboard"></i>
+      </button>
+      <br /><br /><br />
+      <h3>PUSH & PUBLISH:</h3>
+      <p id="publish"></p>
+      <button
+        type="button"
+        class="btn btn-info btn-clipboard"
+        data-clipboard-action="copy"
+        data-clipboard-target="#publish"
+      >
+        Copy <i class="fa fa-clipboard"></i>
+      </button>
+
+      <br />
+    </div>
+    <script>
+      var ad_name;
+      function myFunction() {
+        ad_name = document.getElementById("enter_ad_name").value;
+        document.getElementById("build").innerHTML = "gulp --build " + ad_name;
+        document.getElementById("rebuild").innerHTML =
+          "rm -rf build/" +
+          ad_name +
+          " && rm -rf output/" +
+          ad_name +
+          " && gulp --build " +
+          ad_name;
+
+        document.getElementById("publish").innerHTML =
+          "git pull && git add . && git commit -m &quot" +
+          ad_name +
+          " updates&quot && git push && node publish send " +
+          ad_name;
+      }
+
+      $(document).ready(function () {
+        // alert("hello");
+        new ClipboardJS(".btn");
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
