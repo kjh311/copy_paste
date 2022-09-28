@@ -58,6 +58,17 @@
       >
         Copy <i class="fa fa-clipboard"></i>
       </button>
+      <br /><br /><br />
+      <h3>STATIC:</h3>
+      <p id="static"></p>
+      <button
+        type="button"
+        class="btn btn-info btn-clipboard"
+        data-clipboard-action="copy"
+        data-clipboard-target="#static"
+      >
+        Copy <i class="fa fa-clipboard"></i>
+      </button>
 
       <br />
     </div>
@@ -79,6 +90,9 @@
           ad_name +
           " updates&quot && git push && node publish send " +
           ad_name;
+
+        document.getElementById("static").innerHTML =
+          "node get_review 1 " + ad_name;
       }
 
       $(document).ready(function () {
