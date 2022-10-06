@@ -64,7 +64,7 @@
       <hr />
       <div class="row text-center">
         <div class="col-md-6">
-          <h5>BUILD:</h5>
+          <h4>BUILD:</h4>
           <p id="build"></p>
           <button
             type="button"
@@ -75,7 +75,7 @@
             Copy <i class="fa fa-clipboard"></i>
           </button>
           <br /><br />
-          <h5>REBUILD:</h5>
+          <h4>REBUILD:</h4>
           <p id="rebuild"></p>
           <button
             type="button"
@@ -87,8 +87,20 @@
           </button>
 
           <br /><br />
+          <h4>PUSH:</h4>
+          <p id="push"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#push"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
 
-          <h5>PUBLISH:</h5>
+          <br /><br />
+
+          <h4>PUBLISH:</h4>
           <p id="publish"></p>
           <button
             type="button"
@@ -100,7 +112,7 @@
           </button>
           <br /><br />
 
-          <h5>PULL, PUSH & PUBLISH:</h5>
+          <h4>PULL, PUSH & PUBLISH:</h4>
           <p id="push-publish"></p>
           <button
             type="button"
@@ -114,7 +126,7 @@
         </div>
 
         <div class="col-md-6">
-          <h5>MAKE STATIC:</h5>
+          <h4>MAKE STATIC:</h4>
           <p id="static"></p>
           <button
             type="button"
@@ -126,7 +138,7 @@
           </button>
 
           <br /><br />
-          <h5>STATIC NAME:</h5>
+          <h4>STATIC NAME:</h4>
           <p id="static-name"></p>
           <button
             type="button"
@@ -177,6 +189,11 @@
           ad_name +
           " && gulp --build " +
           ad_name;
+
+        document.getElementById("push").innerHTML =
+          "git add . && git commit -m &quot" +
+          ad_name +
+          " updates&quot && git push ";
 
         document.getElementById("push-publish").innerHTML =
           "git pull && git add . && git commit -m &quot" +
