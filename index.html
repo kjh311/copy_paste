@@ -16,67 +16,156 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <style>
+      #enter_ad_name {
+        width: 60%;
+      }
+      p {
+        font-size: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+      button {
+        margin-top: -15px;
+      }
+      .ad_name_copy {
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+      .btn-do-data {
+        margin-top: -5px;
+      }
+    </style>
   </head>
   <body>
-    <div class="text-center">
-      <label for="enter_ad_name"><h1>Enter Ad Name:</h1></label><br />
-      <input
-        type="text"
-        id="enter_ad_name"
-        oninput="myFunction()"
-      /><br /><br />
+    <div class="container text-center">
+      <label for="enter_ad_name"><h3>Enter Ad Name:</h3></label><br />
+      <div class="col-sm-12 d-flex flex-row justify-content-center">
+        <input
+          type="text"
+          class="text-center"
+          onclick='javascript: this.value = ""'
+          id="enter_ad_name"
+          oninput="myFunction()"
+        />
+        <button
+          type="button"
+          class="btn btn-info btn-clipboard ad_name_copy"
+          data-clipboard-action="copy"
+          data-clipboard-target="#enter_ad_name"
+        >
+          <i class="fa fa-clipboard"></i>
+        </button>
+      </div>
+      <hr />
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h5>BUILD:</h5>
+          <p id="build"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#build"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+          <h5>REBUILD:</h5>
+          <p id="rebuild"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#rebuild"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
 
-      <h3>BUILD:</h3>
-      <p id="build"></p>
-      <button
-        type="button"
-        class="btn btn-info btn-clipboard"
-        data-clipboard-action="copy"
-        data-clipboard-target="#build"
-      >
-        Copy <i class="fa fa-clipboard"></i>
-      </button>
-      <br /><br /><br />
-      <h3>REBUILD:</h3>
-      <p id="rebuild"></p>
-      <button
-        type="button"
-        class="btn btn-info btn-clipboard"
-        data-clipboard-action="copy"
-        data-clipboard-target="#rebuild"
-      >
-        Copy <i class="fa fa-clipboard"></i>
-      </button>
-      <br /><br /><br />
-      <h3>PUSH & PUBLISH:</h3>
-      <p id="publish"></p>
-      <button
-        type="button"
-        class="btn btn-info btn-clipboard"
-        data-clipboard-action="copy"
-        data-clipboard-target="#publish"
-      >
-        Copy <i class="fa fa-clipboard"></i>
-      </button>
-      <br /><br /><br />
-      <h3>STATIC:</h3>
-      <p id="static"></p>
-      <button
-        type="button"
-        class="btn btn-info btn-clipboard"
-        data-clipboard-action="copy"
-        data-clipboard-target="#static"
-      >
-        Copy <i class="fa fa-clipboard"></i>
-      </button>
+          <br /><br />
 
-      <br />
+          <h5>PUBLISH:</h5>
+          <p id="publish"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#publish"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+
+          <h5>PULL, PUSH & PUBLISH:</h5>
+          <p id="push-publish"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#push-publish"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+        </div>
+
+        <div class="col-md-6">
+          <h5>MAKE STATIC:</h5>
+          <p id="static"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#static"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+
+          <br /><br />
+          <h5>STATIC NAME:</h5>
+          <p id="static-name"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#static-name"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+
+          <br /><br />
+
+          <h5 id="do-data">node do_data</h5>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard btn-do-data"
+            data-clipboard-action="copy"
+            data-clipboard-target="#do-data"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+
+          <h5 id="pull">git pull</h5>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard btn-do-data"
+            data-clipboard-action="copy"
+            data-clipboard-target="#pull"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+        </div>
+      </div>
     </div>
     <script>
       var ad_name;
       function myFunction() {
         ad_name = document.getElementById("enter_ad_name").value;
+
         document.getElementById("build").innerHTML = "gulp --build " + ad_name;
+
         document.getElementById("rebuild").innerHTML =
           "rm -rf build/" +
           ad_name +
@@ -85,14 +174,20 @@
           " && gulp --build " +
           ad_name;
 
-        document.getElementById("publish").innerHTML =
+        document.getElementById("push-publish").innerHTML =
           "git pull && git add . && git commit -m &quot" +
           ad_name +
           " updates&quot && git push && node publish send " +
           ad_name;
 
+        document.getElementById("publish").innerHTML =
+          "node publish send " + ad_name;
+
         document.getElementById("static").innerHTML =
           "node get_review 1 " + ad_name;
+
+        document.getElementById("static-name").innerHTML =
+          ad_name + "_static_proof_v";
       }
 
       $(document).ready(function () {
