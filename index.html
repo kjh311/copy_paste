@@ -151,6 +151,19 @@
 
           <br /><br />
 
+          <h4>OPEN IN VS CODE:</h4>
+          <p id="open-in-vs"></p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#open-in-vs"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+
+          <br /><br />
+
           <p id="do-data" class="copy">node do_data</p>
           <button
             type="button"
@@ -206,6 +219,9 @@
 
         document.getElementById("static").innerHTML =
           "node get_review 1 " + ad_name;
+
+        document.getElementById("open-in-vs").innerHTML =
+          "code -r src2/gd/" + ad_name + "/datafile.json";
 
         document.getElementById("static-name").innerHTML =
           ad_name + "_static_proof_v";
