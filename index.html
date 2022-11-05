@@ -401,27 +401,45 @@
             </li>
           </ul>
 
-          <p id="do-data" class="copy">node do_data</p>
-          <button
-            type="button"
-            class="btn btn-info btn-clipboard btn-do-data"
-            data-clipboard-action="copy"
-            data-clipboard-target="#do-data"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
+          <ul class="d-flex flex-row justify-content-center">
+            <li>
+              <p id="do-data" class="hide"></p>
+              <button
+                type="button"
+                class="btn btn-info btn-clipboard btn-do-data"
+                data-clipboard-action="copy"
+                data-clipboard-target="#do-data"
+              >
+                node do_data <i class="fa fa-clipboard"></i>
+              </button>
+              <br /><br />
+            </li>
+            <li>
+              <p id="pull" class="hide"></p>
+              <button
+                type="button"
+                class="btn btn-info btn-clipboard btn-do-data"
+                data-clipboard-action="copy"
+                data-clipboard-target="#pull"
+              >
+                git pull <i class="fa fa-clipboard"></i>
+              </button>
+              <br /><br />
+            </li>
 
-          <p id="pull" class="copy">git pull</p>
-          <button
-            type="button"
-            class="btn btn-info btn-clipboard btn-do-data"
-            data-clipboard-action="copy"
-            data-clipboard-target="#pull"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
+            <li>
+              <p id="nvm" class="hide"></p>
+              <button
+                type="button"
+                class="btn btn-info btn-clipboard btn-do-data"
+                data-clipboard-action="copy"
+                data-clipboard-target="#nvm"
+              >
+                nvm use 16 <i class="fa fa-clipboard"></i>
+              </button>
+              <br /><br />
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -459,6 +477,12 @@
 
         document.getElementById("open-in-vs").innerHTML =
           "code -r src2/gd/" + ad_name + "/datafile.json";
+
+        document.getElementById("do-data").innerHTML = "node do_data";
+
+        document.getElementById("pull").innerHTML = "git pull";
+
+        document.getElementById("nvm").innerHTML = "nvm use 16";
 
         document.getElementById("static-name").innerHTML =
           ad_name + "_static_proof_v";
