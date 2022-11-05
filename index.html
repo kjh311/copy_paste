@@ -174,28 +174,6 @@
 
           <br /><br />
 
-          <p id="do-data" class="copy">node do_data</p>
-          <button
-            type="button"
-            class="btn btn-info btn-clipboard btn-do-data"
-            data-clipboard-action="copy"
-            data-clipboard-target="#do-data"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
-
-          <p id="pull" class="copy">git pull</p>
-          <button
-            type="button"
-            class="btn btn-info btn-clipboard btn-do-data"
-            data-clipboard-action="copy"
-            data-clipboard-target="#pull"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
-
           <h4>Frame 1 Break:</h4>
           <ul class="d-flex flex-row justify-content-center">
             <li>
@@ -422,6 +400,28 @@
               </button>
             </li>
           </ul>
+
+          <p id="do-data" class="copy">node do_data</p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard btn-do-data"
+            data-clipboard-action="copy"
+            data-clipboard-target="#do-data"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+
+          <p id="pull" class="copy">git pull</p>
+          <button
+            type="button"
+            class="btn btn-info btn-clipboard btn-do-data"
+            data-clipboard-action="copy"
+            data-clipboard-target="#pull"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
         </div>
       </div>
     </div>
@@ -700,8 +700,8 @@
       document.getElementById("frame2-10").innerHTML += "}";
 
       $(document).ready(function () {
-        // alert("hello");
         new ClipboardJS(".btn");
+        // alert("Copied!");
       });
     </script>
     <script
