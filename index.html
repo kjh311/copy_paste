@@ -138,35 +138,6 @@
             Copy <i class="fa fa-clipboard"></i>
           </button>
           <br /><br />
-        </div>
-
-        <div class="col-md-6">
-          <h4>MAKE STATIC:</h4>
-          <p id="static" class="hide"></p>
-          <button
-            id="btn-static"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#static"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-
-          <br /><br />
-          <h4>STATIC NAME:</h4>
-          <p id="static-name" class="hide"></p>
-          <button
-            id="btn-static-name"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#static-name"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-
-          <br /><br />
 
           <h4>OPEN IN VS CODE:</h4>
           <p id="open-in-vs" class="hide"></p>
@@ -181,6 +152,52 @@
           </button>
 
           <br /><br />
+        </div>
+
+        <div class="col-md-6">
+          <ul class="d-flex flex-row justify-content-center">
+            <li>
+              <p id="static" class="hide"></p>
+              <button
+                id="btn-static"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#static"
+              >
+                Make Static <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+            <li>
+              <p id="static-name" class="hide"></p>
+              <button
+                id="btn-static-name"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#static-name"
+              >
+                Static Name <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+            <li>
+              <p id="open-static" class="hide"></p>
+              <button
+                id="btn-open-static"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#open-static"
+              >
+                Open Static <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+          </ul>
+
+          <!-- <br /><br />
+         
+
+          <br /><br /> -->
 
           <h4>Frame 1 Break:</h4>
           <ul class="d-flex flex-row justify-content-center">
@@ -504,6 +521,9 @@
         document.getElementById("static").innerHTML =
           "node get_review 1 " + ad_name;
 
+        document.getElementById("open-static").innerHTML =
+          'open -a "Google Chrome" review/review_html/index.html';
+
         document.getElementById("open-in-vs").innerHTML =
           "code -r src2/gd/" + ad_name + "/datafile.json";
 
@@ -778,6 +798,15 @@
             "background-color": "#32D2F2",
           });
           $("#btn-data").css({
+            "background-color": "#139ab5",
+          });
+        });
+
+        $("#btn-open-static").click(function () {
+          $(".btn").css({
+            "background-color": "#32D2F2",
+          });
+          $("#btn-open-static").css({
             "background-color": "#139ab5",
           });
         });
