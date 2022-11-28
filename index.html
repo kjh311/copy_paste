@@ -139,6 +139,19 @@
           </button>
           <br /><br />
 
+          <h4>PUSH, PUBLISH, & STATIC:</h4>
+          <p id="publish-static" class="hide"></p>
+          <button
+            id="btn-push-publish-static"
+            type="button"
+            class="btn btn-info btn-clipboard"
+            data-clipboard-action="copy"
+            data-clipboard-target="#publish-static"
+          >
+            Copy <i class="fa fa-clipboard"></i>
+          </button>
+          <br /><br />
+
           <h4>OPEN IN VS CODE:</h4>
           <p id="open-in-vs" class="hide"></p>
           <button
@@ -514,6 +527,15 @@
           ad_name +
           " updates&quot && git push && node publish send " +
           ad_name;
+
+        document.getElementById("publish-static").innerHTML =
+          "git add . && git commit -m &quot" +
+          ad_name +
+          " updates&quot && git push && node publish send " +
+          ad_name +
+          " && node get_review 1 " +
+          ad_name +
+          " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
 
         document.getElementById("publish").innerHTML =
           "node publish send " + ad_name;
@@ -1014,6 +1036,15 @@
             "background-color": "#32D2F2",
           });
           $("#btn-pull-push-publish").css({
+            "background-color": "#139ab5",
+          });
+        });
+
+        $("#btn-push-publish-static").click(function () {
+          $(".btn").css({
+            "background-color": "#32D2F2",
+          });
+          $("#btn-push-publish-static").css({
             "background-color": "#139ab5",
           });
         });
