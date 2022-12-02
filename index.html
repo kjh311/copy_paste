@@ -43,6 +43,9 @@
         display: inline !important;
         margin: 3px;
       }
+      ul {
+        padding-inline-start: 0px !important;
+      }
       .hide {
         color: #fff;
         overflow: hidden;
@@ -75,88 +78,103 @@
       <div class="row text-center">
         <div class="col-md-6">
           <h4>BUILD:</h4>
-          <p id="build" class="hide"></p>
-          <button
-            id="btn-build"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#build"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
-          <h4>REBUILD:</h4>
-          <p id="rebuild" class="hide"></p>
-          <button
-            id="btn-rebuild"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#rebuild"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
 
-          <br /><br />
-          <h4>PUSH:</h4>
-          <p id="push" class="hide"></p>
-          <button
-            id="btn-push"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#push"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
+          <ul class="d-flex flex-row justify-content-center">
+            <li>
+              <p id="do-data" class="hide"></p>
+              <button
+                id="btn-data"
+                type="button"
+                class="btn btn-info btn-clipboard btn-do-data"
+                data-clipboard-action="copy"
+                data-clipboard-target="#do-data"
+              >
+                node do_data <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
 
-          <br /><br />
+            <li>
+              <p id="build" class="hide"></p>
+              <button
+                id="btn-build"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#build"
+              >
+                Build <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+            <li>
+              <p id="rebuild" class="hide"></p>
+              <button
+                id="btn-rebuild"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#rebuild"
+              >
+                ReBuild <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+          </ul>
 
-          <h4>PUBLISH:</h4>
-          <p id="publish" class="hide"></p>
-          <button
-            id="btn-publish"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#publish"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
-          <br /><br />
+          <h4>PULL/PUSH/PUBLISH:</h4>
+          <ul class="d-flex flex-row justify-content-center">
+            <li>
+              <p id="pull" class="hide"></p>
+              <button
+                id="btn-pull"
+                type="button"
+                class="btn btn-info btn-clipboard btn-do-data"
+                data-clipboard-action="copy"
+                data-clipboard-target="#pull"
+              >
+                Pull <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
 
-          <h4>PULL, PUSH & PUBLISH:</h4>
-          <p id="push-publish" class="hide"></p>
-          <button
-            id="btn-pull-push-publish"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#push-publish"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
+            <li>
+              <p id="push" class="hide"></p>
+              <button
+                id="btn-push"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#push"
+              >
+                Push <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
 
-          <br /><br />
+            <li>
+              <p id="publish" class="hide"></p>
+              <button
+                id="btn-publish"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#publish"
+              >
+                Publish <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
 
-          <h4>OPEN IN VS CODE:</h4>
-          <p id="open-in-vs" class="hide"></p>
-          <button
-            id="btn-vs-code"
-            type="button"
-            class="btn btn-info btn-clipboard"
-            data-clipboard-action="copy"
-            data-clipboard-target="#open-in-vs"
-          >
-            Copy <i class="fa fa-clipboard"></i>
-          </button>
+            <li>
+              <p id="push-publish" class="hide"></p>
+              <button
+                id="btn-pull-push-publish"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#push-publish"
+              >
+                Pull, Push, & Publish <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+          </ul>
 
-          <br /><br />
-        </div>
-
-        <div class="col-md-6">
-          <h4>Static:</h4>
+          <h4>STATIC:</h4>
           <ul class="d-flex flex-row justify-content-center">
             <li>
               <p id="static" class="hide"></p>
@@ -170,6 +188,20 @@
                 Make Static & Open <i class="fa fa-clipboard"></i>
               </button>
             </li>
+
+            <li>
+              <p id="publish-static" class="hide"></p>
+              <button
+                id="btn-push-publish-static"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#publish-static"
+              >
+                Pull, Push, Publish, & Static <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+
             <li>
               <p id="static-name" class="hide"></p>
               <button
@@ -182,22 +214,10 @@
                 Static Name <i class="fa fa-clipboard"></i>
               </button>
             </li>
-
-            <li>
-              <!-- <h4>PUSH, PUBLISH, & STATIC:</h4> -->
-              <p id="publish-static" class="hide"></p>
-              <button
-                id="btn-push-publish-static"
-                type="button"
-                class="btn btn-info btn-clipboard"
-                data-clipboard-action="copy"
-                data-clipboard-target="#publish-static"
-              >
-                PULL, PUSH, PUBLISH, & STATIC <i class="fa fa-clipboard"></i>
-              </button>
-            </li>
           </ul>
+        </div>
 
+        <div class="col-md-6">
           <h4>Frame 1 Break:</h4>
           <ul class="d-flex flex-row justify-content-center">
             <li>
@@ -445,33 +465,6 @@
 
           <ul class="d-flex flex-row justify-content-center">
             <li>
-              <p id="do-data" class="hide"></p>
-              <button
-                id="btn-data"
-                type="button"
-                class="btn btn-info btn-clipboard btn-do-data"
-                data-clipboard-action="copy"
-                data-clipboard-target="#do-data"
-              >
-                node do_data <i class="fa fa-clipboard"></i>
-              </button>
-              <br /><br />
-            </li>
-            <li>
-              <p id="pull" class="hide"></p>
-              <button
-                id="btn-pull"
-                type="button"
-                class="btn btn-info btn-clipboard btn-do-data"
-                data-clipboard-action="copy"
-                data-clipboard-target="#pull"
-              >
-                git pull <i class="fa fa-clipboard"></i>
-              </button>
-              <br /><br />
-            </li>
-
-            <li>
               <p id="nvm" class="hide"></p>
               <button
                 id="btn-nvm"
@@ -482,7 +475,19 @@
               >
                 nvm use 16 <i class="fa fa-clipboard"></i>
               </button>
-              <br /><br />
+            </li>
+
+            <li>
+              <p id="open-in-vs" class="hide"></p>
+              <button
+                id="btn-vs-code"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#open-in-vs"
+              >
+                Open in VS Code <i class="fa fa-clipboard"></i>
+              </button>
             </li>
           </ul>
         </div>
