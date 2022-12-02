@@ -178,10 +178,9 @@
                 data-clipboard-action="copy"
                 data-clipboard-target="#static"
               >
-                Static <i class="fa fa-clipboard"></i>
+                Make Static <i class="fa fa-clipboard"></i>
               </button>
             </li>
-
             <li>
               <p id="static-name" class="hide"></p>
               <button
@@ -194,7 +193,6 @@
                 Static Name <i class="fa fa-clipboard"></i>
               </button>
             </li>
-            <!-- 
             <li>
               <p id="open-static" class="hide"></p>
               <button
@@ -206,7 +204,7 @@
               >
                 Open Static <i class="fa fa-clipboard"></i>
               </button>
-            </li> -->
+            </li>
           </ul>
 
           <!-- <br /><br />
@@ -530,7 +528,7 @@
           ad_name;
 
         document.getElementById("publish-static").innerHTML =
-          "git pull && git add . && git commit -m &quot" +
+          "git add . && git commit -m &quot" +
           ad_name +
           " updates&quot && git push && node publish send " +
           ad_name +
@@ -542,9 +540,7 @@
           "node publish send " + ad_name;
 
         document.getElementById("static").innerHTML =
-          "node get_review 1 " +
-          ad_name +
-          " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
+          "node get_review 1 " + ad_name;
 
         document.getElementById("open-static").innerHTML =
           'open -a "Google Chrome" review/review_html/index.html';
