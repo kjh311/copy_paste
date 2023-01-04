@@ -20,24 +20,38 @@
   </head>
   <body>
     <div class="container text-center">
-      <label for="enter_ad_name"><h3>Enter Ad Name:</h3></label><br />
+      <!-- <label for="enter_ad_name"><h3>Enter Ad Name:</h3></label> -->
+      <br />
       <div class="col-sm-12 d-flex flex-row justify-content-center">
         <input
           type="text"
           class="text-center"
-          onclick='javascript: this.value = ""'
+          onclick="empty_fields()"
           id="enter_ad_name"
+          placeholder="Enter Ad Name"
           oninput="myFunction()"
         />
+
         <button
           type="button"
           class="btn btn-info btn-clipboard ad_name_copy"
           data-clipboard-action="copy"
           data-clipboard-target="#enter_ad_name"
+          id="enter_ad_name_button"
         >
           <i class="fa fa-clipboard"></i>
         </button>
       </div>
+      <!-- <div class="col-sm-12 d-flex flex-row justify-content-center">
+        <input
+          type="text"
+          class="text-center"
+          onclick="empty_field()"
+          id="custom-commit"
+          placeholder="Custom Commit"
+          oninput="commit()"
+        />
+      </div> -->
       <hr />
       <div class="row text-center">
         <div class="col-md-6">

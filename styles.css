@@ -1,6 +1,15 @@
 #enter_ad_name {
   width: 60%;
 }
+
+#custom-commit {
+  width: 40%;
+  margin-top: 5px;
+}
+#enter_ad_name_button {
+  position: relative;
+  top: -3px;
+}
 p {
   font-size: 12px;
   padding-left: 10%;

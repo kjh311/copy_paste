@@ -1,6 +1,22 @@
 var ad_name;
+// var custom_commit = document.getElementById("custom-commit");
+var enter_ad_name = document.getElementById("enter_ad_name");
+var custom_commit_message = "updates&quot";
+
+function empty_fields() {
+  enter_ad_name.value = "";
+  //   custom_commit.value = "";
+  //   custom_commit_message = "updates&quot";
+}
+
+// function commit() {
+//   if (custom_commit.value !== "") {
+//     custom_commit_message = custom_commit.value;
+//   }
+// }
+
 function myFunction() {
-  ad_name = document.getElementById("enter_ad_name").value;
+  ad_name = enter_ad_name.value;
 
   document.getElementById("build").innerHTML = "gulp --build " + ad_name;
 
