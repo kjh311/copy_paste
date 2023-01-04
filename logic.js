@@ -49,7 +49,11 @@ function myFunction() {
   document.getElementById("static-name").innerHTML =
     ad_name + "_static_proof_v";
 }
+
+//frame breaks
 var string_Raw = String.raw`\A`;
+
+//feature/rebuild
 
 document.getElementById("frame1-2").innerHTML += "//Frame 1 Break";
 document.getElementById("frame1-2").innerHTML += "<br>";
@@ -270,6 +274,7 @@ document.getElementById("frame2-10").innerHTML += "<br>";
 document.getElementById("frame2-10").innerHTML += "}";
 
 //vnext frame breaks
+
 document.getElementById("vnext-frame1-2").innerHTML += "//Frame 1 Break";
 document.getElementById("vnext-frame1-2").innerHTML += "<br>";
 document.getElementById("vnext-frame1-2").innerHTML +=
@@ -386,3 +391,122 @@ document.getElementById("vnext-frame1-10").innerHTML +=
   "white-space: pre !important;";
 document.getElementById("vnext-frame1-10").innerHTML += "<br>";
 document.getElementById("vnext-frame1-10").innerHTML += "}";
+
+//vnext frame 2
+
+document.getElementById("vnext-frame2-2").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-2").innerHTML += "<br>";
+document.getElementById("vnext-frame2-2").innerHTML +=
+  ".text--3A span:nth-child(2)::before{";
+document.getElementById("vnext-frame2-2").innerHTML += "<br>";
+document.getElementById("vnext-frame2-2").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-2").innerHTML += "<br>";
+document.getElementById("vnext-frame2-2").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-2").innerHTML += "<br>";
+document.getElementById("vnext-frame2-2").innerHTML += "}";
+
+document.getElementById("vnext-frame2-3").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-3").innerHTML += "<br>";
+document.getElementById("vnext-frame2-3").innerHTML +=
+  ".text--3A span:nth-child(3)::before{";
+document.getElementById("vnext-frame2-3").innerHTML += "<br>";
+document.getElementById("vnext-frame2-3").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-3").innerHTML += "<br>";
+document.getElementById("vnext-frame2-3").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-3").innerHTML += "<br>";
+document.getElementById("vnext-frame2-3").innerHTML += "}";
+
+document.getElementById("vnext-frame2-4").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-4").innerHTML += "<br>";
+document.getElementById("vnext-frame2-4").innerHTML +=
+  ".text--3A span:nth-child(4)::before{";
+document.getElementById("vnext-frame2-4").innerHTML += "<br>";
+document.getElementById("vnext-frame2-4").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-4").innerHTML += "<br>";
+document.getElementById("vnext-frame2-4").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-4").innerHTML += "<br>";
+document.getElementById("vnext-frame2-4").innerHTML += "}";
+
+document.getElementById("vnext-frame2-5").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-5").innerHTML += "<br>";
+document.getElementById("vnext-frame2-5").innerHTML +=
+  ".text--3A span:nth-child(5)::before{";
+document.getElementById("vnext-frame2-5").innerHTML += "<br>";
+document.getElementById("vnext-frame2-5").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-5").innerHTML += "<br>";
+document.getElementById("vnext-frame2-5").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-5").innerHTML += "<br>";
+document.getElementById("vnext-frame2-5").innerHTML += "}";
+
+document.getElementById("vnext-frame2-6").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-6").innerHTML += "<br>";
+document.getElementById("vnext-frame2-6").innerHTML +=
+  ".text--3A span:nth-child(6)::before{";
+document.getElementById("vnext-frame2-6").innerHTML += "<br>";
+document.getElementById("vnext-frame2-6").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-6").innerHTML += "<br>";
+document.getElementById("vnext-frame2-6").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-6").innerHTML += "<br>";
+document.getElementById("vnext-frame2-6").innerHTML += "}";
+
+document.getElementById("vnext-frame2-7").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-7").innerHTML += "<br>";
+document.getElementById("vnext-frame2-7").innerHTML +=
+  ".text--3A span:nth-child(7)::before{";
+document.getElementById("vnext-frame2-7").innerHTML += "<br>";
+document.getElementById("vnext-frame2-7").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-7").innerHTML += "<br>";
+document.getElementById("vnext-frame2-7").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-7").innerHTML += "<br>";
+document.getElementById("vnext-frame2-7").innerHTML += "}";
+
+document.getElementById("vnext-frame2-8").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-8").innerHTML += "<br>";
+document.getElementById("vnext-frame2-8").innerHTML +=
+  ".text--3A span:nth-child(8)::before{";
+document.getElementById("vnext-frame2-8").innerHTML += "<br>";
+document.getElementById("vnext-frame2-8").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-8").innerHTML += "<br>";
+document.getElementById("vnext-frame2-8").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-8").innerHTML += "<br>";
+document.getElementById("vnext-frame2-8").innerHTML += "}";
+
+document.getElementById("vnext-frame2-9").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-9").innerHTML += "<br>";
+document.getElementById("vnext-frame2-9").innerHTML +=
+  ".text--3A span:nth-child(9)::before{";
+document.getElementById("vnext-frame2-9").innerHTML += "<br>";
+document.getElementById("vnext-frame2-9").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-9").innerHTML += "<br>";
+document.getElementById("vnext-frame2-9").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-9").innerHTML += "<br>";
+document.getElementById("vnext-frame2-9").innerHTML += "}";
+
+document.getElementById("vnext-frame2-10").innerHTML += "//Frame 2 Break";
+document.getElementById("vnext-frame2-10").innerHTML += "<br>";
+document.getElementById("vnext-frame2-10").innerHTML +=
+  ".text--3A span:nth-child(10)::before{";
+document.getElementById("vnext-frame2-10").innerHTML += "<br>";
+document.getElementById("vnext-frame2-10").innerHTML +=
+  "content:'" + string_Raw + "' !important;";
+document.getElementById("vnext-frame2-10").innerHTML += "<br>";
+document.getElementById("vnext-frame2-10").innerHTML +=
+  "white-space: pre !important;";
+document.getElementById("vnext-frame2-10").innerHTML += "<br>";
+document.getElementById("vnext-frame2-10").innerHTML += "}";

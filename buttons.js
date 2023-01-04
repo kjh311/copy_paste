@@ -272,6 +272,87 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-vnext-frame2-2").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-2").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-3").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-3").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-4").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-4").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-5").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-5").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-6").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-6").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-7").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-7").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-8").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-8").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-9").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-9").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-vnext-frame2-10").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-vnext-frame2-10").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-build").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",
