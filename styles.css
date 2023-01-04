@@ -1,0 +1,38 @@
+#enter_ad_name {
+  width: 60%;
+}
+p {
+  font-size: 12px;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: #12a1c9;
+}
+button {
+  margin-top: -15px;
+}
+.ad_name_copy {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.btn-do-data {
+  margin-top: -15px;
+}
+.copy {
+  font-size: 16px;
+}
+ul li {
+  display: inline !important;
+  margin: 3px;
+}
+ul {
+  padding-inline-start: 0px !important;
+}
+.hide {
+  color: #fff;
+  overflow: hidden;
+  max-height: 1px;
+  max-width: 1px;
+}
+.heading {
+  text-decoration: underline;
+}
