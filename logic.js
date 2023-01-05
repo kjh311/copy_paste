@@ -34,19 +34,20 @@ function myFunction() {
   document.getElementById("push-publish").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
-    " updates&quot && git push && node publish send " +
+    " updates&quot && git push && nvm use 16 && node publish send " +
     ad_name;
 
   document.getElementById("publish-static").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
-    " updates&quot && git push && node publish send " +
+    " updates&quot && git push && nvm use 16 && node publish send " +
     ad_name +
     " && node get_review 1 " +
     ad_name +
     " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
 
-  document.getElementById("publish").innerHTML = "node publish send " + ad_name;
+  document.getElementById("publish").innerHTML =
+    "nvm use 16 && node publish send " + ad_name;
 
   document.getElementById("static").innerHTML =
     "node get_review 1 " +

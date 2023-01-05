@@ -433,4 +433,13 @@ $(document).ready(function () {
       "background-color": "#139ab5",
     });
   });
+
+  $("#enter_ad_name_button").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#enter_ad_name_button").css({
+      "background-color": "#139ab5",
+    });
+  });
 });
