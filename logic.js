@@ -1,13 +1,21 @@
 var ad_name;
 // var custom_commit = document.getElementById("custom-commit");
+
+var custom_commit_message;
+
 var enter_ad_name = document.getElementById("enter_ad_name");
-var custom_commit_message = "updates&quot";
 
 function empty_fields() {
   enter_ad_name.value = "";
-  //   custom_commit.value = "";
+  // custom_commit.value = "";
   //   custom_commit_message = "updates&quot";
 }
+
+// function empty_field() {
+//   // enter_ad_name.value = "";
+//   custom_commit.value = "";
+//   //   custom_commit_message = "updates&quot";
+// }
 
 // function commit() {
 //   if (custom_commit.value !== "") {
@@ -17,6 +25,15 @@ function empty_fields() {
 
 function myFunction() {
   ad_name = enter_ad_name.value;
+  var custom_commit = document.getElementById("custom-commit").value;
+
+  if (custom_commit !== "") {
+    custom_commit_message = custom_commit + "&quot";
+  } else {
+    custom_commit_message = "updates&quot";
+  }
+
+  // alert(custom_commit_message);
 
   document.getElementById("build").innerHTML = "gulp --build " + ad_name;
 
@@ -29,18 +46,26 @@ function myFunction() {
     ad_name;
 
   document.getElementById("push").innerHTML =
-    "git add . && git commit -m &quot" + ad_name + " updates&quot && git push ";
+    "git add . && git commit -m &quot" +
+    ad_name +
+    " " +
+    custom_commit_message +
+    " && git push ";
 
   document.getElementById("push-publish").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
-    " updates&quot && git push && nvm use 16 && node publish send " +
+    " " +
+    custom_commit_message +
+    " && git push && nvm use 16 && node publish send " +
     ad_name;
 
   document.getElementById("publish-static").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
-    " updates&quot && git push && nvm use 16 && node publish send " +
+    " " +
+    custom_commit_message +
+    " && git push && nvm use 16 && node publish send " +
     ad_name +
     " && node get_review 1 " +
     ad_name +
