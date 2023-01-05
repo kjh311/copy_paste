@@ -1,5 +1,6 @@
 var ad_name;
-// var custom_commit = document.getElementById("custom-commit");
+var custom_commit_input = document.getElementById("custom-commit");
+var custom_commit = document.getElementById("custom-commit").value;
 
 var custom_commit_message;
 
@@ -7,25 +8,18 @@ var enter_ad_name = document.getElementById("enter_ad_name");
 
 function empty_fields() {
   enter_ad_name.value = "";
-  // custom_commit.value = "";
-  //   custom_commit_message = "updates&quot";
+  custom_commit_input.value = "";
 }
 
-// function empty_field() {
-//   // enter_ad_name.value = "";
-//   custom_commit.value = "";
-//   //   custom_commit_message = "updates&quot";
-// }
-
-// function commit() {
-//   if (custom_commit.value !== "") {
-//     custom_commit_message = custom_commit.value;
-//   }
-// }
+function empty_field() {
+  custom_commit_input.value = "";
+  custom_commit = "";
+  myFunction(custom_commit);
+}
 
 function myFunction() {
   ad_name = enter_ad_name.value;
-  var custom_commit = document.getElementById("custom-commit").value;
+  custom_commit = document.getElementById("custom-commit").value;
 
   if (custom_commit !== "") {
     custom_commit_message = custom_commit + "&quot";
