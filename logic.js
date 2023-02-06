@@ -1,14 +1,17 @@
 var ad_name;
 var custom_commit_input = document.getElementById("custom-commit");
 var custom_commit = document.getElementById("custom-commit").value;
-
 var custom_commit_message;
-
 var enter_ad_name = document.getElementById("enter_ad_name");
+var buttons = document.querySelectorAll(".btn");
 
 function empty_fields() {
   enter_ad_name.value = "";
   custom_commit_input.value = "";
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].style.backgroundColor = "#32D2F2";
+  }
 }
 
 function empty_field() {
