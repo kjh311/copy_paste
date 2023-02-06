@@ -1,3 +1,41 @@
+#my-popup {
+  width: 65px;
+  height: 35px;
+  background: #139ab5;
+  box-sizing: border-box; /* for inside padding */
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+
+  opacity: 1;
+  animation: fade 2s linear;
+
+  /* for center */
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* for hider */
+  display: none;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+
 #enter_ad_name {
   width: 60%;
 }

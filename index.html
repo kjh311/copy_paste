@@ -20,6 +20,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
   </head>
   <body>
+    <!-- modal -->
+
+    <div id="my-popup">Copied!</div>
+
     <div class="container text-center">
       <!-- <label for="enter_ad_name"><h3>Enter Ad Name:</h3></label> -->
       <br />
@@ -34,6 +38,7 @@
         />
 
         <button
+          onclick="showPopUp()"
           type="button"
           class="btn btn-info btn-clipboard ad_name_copy"
           data-clipboard-action="copy"
@@ -62,6 +67,7 @@
             <li>
               <p id="do-data" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-data"
                 type="button"
                 class="btn btn-info btn-clipboard btn-do-data"
@@ -75,6 +81,7 @@
             <li>
               <p id="build" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-build"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -87,6 +94,7 @@
             <li>
               <p id="rebuild" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-rebuild"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -103,6 +111,7 @@
             <li>
               <p id="pull" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-pull"
                 type="button"
                 class="btn btn-info btn-clipboard btn-do-data"
@@ -116,6 +125,7 @@
             <li>
               <p id="push" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-push"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -129,6 +139,7 @@
             <li>
               <p id="publish" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-publish"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -142,6 +153,7 @@
             <li>
               <p id="push-publish" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-pull-push-publish"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -158,6 +170,7 @@
             <li>
               <p id="static" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-static"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -171,6 +184,7 @@
             <li>
               <p id="publish-static" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-push-publish-static"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -184,6 +198,7 @@
             <li>
               <p id="static-name" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-static-name"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -199,6 +214,7 @@
             <li>
               <p id="gif-static" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-gif-static"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -212,6 +228,7 @@
             <li>
               <p id="publish-gif-static" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-push-publish-gif-static"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -227,6 +244,7 @@
             <li>
               <p id="nvm" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-nvm"
                 type="button"
                 class="btn btn-info btn-clipboard btn-do-data"
@@ -240,6 +258,7 @@
             <li>
               <p id="open-in-vs" class="hide"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vs-code"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -259,6 +278,7 @@
             <li>
               <p class="hide" id="frame1-2"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-2"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -272,6 +292,7 @@
               <p class="hide" id="frame1-3"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-3"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -285,6 +306,7 @@
               <p class="hide" id="frame1-4"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-4"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -298,6 +320,7 @@
               <p class="hide" id="frame1-5"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-5"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -312,6 +335,7 @@
               <p class="hide" id="frame1-6"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-6"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -326,6 +350,7 @@
               <p class="hide" id="frame1-7"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-7"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -340,6 +365,7 @@
               <p class="hide" id="frame1-8"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-8"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -354,6 +380,7 @@
               <p class="hide" id="frame1-9"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-9"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -368,6 +395,7 @@
               <p class="hide" id="frame1-10"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-frame1-10"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -384,6 +412,7 @@
             <li>
               <p class="hide" id="frame2-2"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-2"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -397,6 +426,7 @@
             <li>
               <p class="hide" id="frame2-3"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-3"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -410,6 +440,7 @@
             <li>
               <p class="hide" id="frame2-4"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-4"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -423,6 +454,7 @@
             <li>
               <p class="hide" id="frame2-5"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-5"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -436,6 +468,7 @@
             <li>
               <p class="hide" id="frame2-6"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-6"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -449,6 +482,7 @@
             <li>
               <p class="hide" id="frame2-7"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-7"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -462,6 +496,7 @@
             <li>
               <p class="hide" id="frame2-8"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-8"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -475,6 +510,7 @@
             <li>
               <p class="hide" id="frame2-9"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-9"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -488,6 +524,7 @@
             <li>
               <p class="hide" id="frame2-10"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-frame2-10"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -505,6 +542,7 @@
             <li>
               <p class="hide" id="vnext-frame1-2"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-2"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -518,6 +556,7 @@
               <p class="hide" id="vnext-frame1-3"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-3"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -531,6 +570,7 @@
               <p class="hide" id="vnext-frame1-4"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-4"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -544,6 +584,7 @@
               <p class="hide" id="vnext-frame1-5"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-5"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -558,6 +599,7 @@
               <p class="hide" id="vnext-frame1-6"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-6"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -572,6 +614,7 @@
               <p class="hide" id="vnext-frame1-7"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-7"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -586,6 +629,7 @@
               <p class="hide" id="vnext-frame1-8"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-8"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -600,6 +644,7 @@
               <p class="hide" id="vnext-frame1-9"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-9"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -614,6 +659,7 @@
               <p class="hide" id="vnext-frame1-10"></p>
 
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame1-10"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -630,6 +676,7 @@
             <li>
               <p class="hide" id="vnext-frame2-2"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-2"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -643,6 +690,7 @@
             <li>
               <p class="hide" id="vnext-frame2-3"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-3"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -656,6 +704,7 @@
             <li>
               <p class="hide" id="vnext-frame2-4"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-4"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -669,6 +718,7 @@
             <li>
               <p class="hide" id="vnext-frame2-5"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-5"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -682,6 +732,7 @@
             <li>
               <p class="hide" id="vnext-frame2-6"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-6"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -695,6 +746,7 @@
             <li>
               <p class="hide" id="vnext-frame2-7"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-7"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -708,6 +760,7 @@
             <li>
               <p class="hide" id="vnext-frame2-8"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-8"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -721,6 +774,7 @@
             <li>
               <p class="hide" id="vnext-frame2-9"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-9"
                 type="button"
                 class="btn btn-info btn-clipboard"
@@ -734,6 +788,7 @@
             <li>
               <p class="hide" id="vnext-frame2-10"></p>
               <button
+                onclick="showPopUp()"
                 id="btn-vnext-frame2-10"
                 type="button"
                 class="btn btn-info btn-clipboard"

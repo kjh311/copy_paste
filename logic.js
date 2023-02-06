@@ -4,6 +4,16 @@ var custom_commit = document.getElementById("custom-commit").value;
 var custom_commit_message;
 var enter_ad_name = document.getElementById("enter_ad_name");
 var buttons = document.querySelectorAll(".btn");
+var my_popup = document.getElementById("my-popup");
+
+function showPopUp() {
+  my_popup.style.display = "block";
+  setTimeout(hidePopUp, 1980);
+}
+
+function hidePopUp() {
+  my_popup.style.display = "none";
+}
 
 function empty_fields() {
   enter_ad_name.value = "";
@@ -18,6 +28,10 @@ function empty_field() {
   custom_commit_input.value = "";
   custom_commit = "";
   myFunction(custom_commit);
+
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].style.backgroundColor = "#32D2F2";
+  }
 }
 
 function myFunction() {
