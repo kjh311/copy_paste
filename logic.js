@@ -7,7 +7,7 @@ var buttons = document.querySelectorAll(".btn");
 var my_popup = document.getElementById("my-popup");
 
 function showPopUp() {
-  my_popup.style.display = "block";
+  // my_popup.style.display = "block";
   setTimeout(hidePopUp, 1980);
 }
 
