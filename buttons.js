@@ -425,6 +425,24 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-push-publish-gif-static").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-push-publish-gif-static").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-gif-static").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-gif-static").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-vs-code").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",

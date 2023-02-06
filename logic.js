@@ -65,6 +65,17 @@ function myFunction() {
     ad_name +
     " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
 
+  document.getElementById("publish-gif-static").innerHTML =
+    "git pull && git add . && git commit -m &quot" +
+    ad_name +
+    " " +
+    custom_commit_message +
+    " && git push && nvm use 16 && node publish send " +
+    ad_name +
+    " && npm run proof 2 " +
+    ad_name +
+    " && open -a &quotGoogle Chrome&quot proof_review/review/index.html";
+
   document.getElementById("publish").innerHTML =
     "nvm use 16 && node publish send " + ad_name;
 
@@ -72,6 +83,11 @@ function myFunction() {
     "node get_review 1 " +
     ad_name +
     " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
+
+  document.getElementById("gif-static").innerHTML =
+    "npm run proof 2 " +
+    ad_name +
+    " && open -a &quotGoogle Chrome&quot proof_review/review/index.html";
 
   document.getElementById("open-in-vs").innerHTML =
     "code -r src2/gd/" + ad_name + "/datafile.json";
