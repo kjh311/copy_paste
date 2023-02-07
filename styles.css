@@ -36,6 +36,19 @@
   }
 }
 
+h4,
+h3,
+li,
+input {
+  /* font-family: "Anton", sans-serif; */
+  font-family: "Mochiy Pop One", sans-serif;
+}
+
+h4,
+h3 {
+  /* text-decoration: underline; */
+}
+
 #enter_ad_name {
   width: 60%;
 }
@@ -81,5 +94,5 @@ ul {
   max-width: 0.1px;
 }
 .heading {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
