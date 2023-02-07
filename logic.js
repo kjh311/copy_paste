@@ -15,18 +15,6 @@ function hidePopUp() {
   my_popup.style.display = "none";
 }
 
-function first_pass() {
-  document.getElementById("custom-commit").value = "First Pass";
-}
-
-function talia_notes() {
-  document.getElementById("custom-commit").value = "Talia Notes";
-}
-
-function published() {
-  document.getElementById("custom-commit").value = "Published";
-}
-
 function empty_fields() {
   enter_ad_name.value = "";
   custom_commit_input.value = "";
