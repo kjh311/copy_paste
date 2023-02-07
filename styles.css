@@ -1,5 +1,5 @@
 #my-popup {
-  width: 65px;
+  width: 78px;
   height: 35px;
   background: #139ab5;
   box-sizing: border-box; /* for inside padding */
@@ -39,7 +39,8 @@
 h4,
 h3,
 li,
-input {
+input,
+#my-popup {
   /* font-family: "Anton", sans-serif; */
   font-family: "Mochiy Pop One", sans-serif;
 }
