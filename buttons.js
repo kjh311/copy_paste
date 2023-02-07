@@ -434,6 +434,15 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-make-gif").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-make-gif").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-gif-static").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",

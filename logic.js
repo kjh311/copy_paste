@@ -93,6 +93,9 @@ function myFunction() {
     ad_name +
     " && open -a &quotGoogle Chrome&quot proof_review/review/index.html";
 
+  document.getElementById("make-gif").innerHTML =
+    "npm run gif " + ad_name + " && open proof_review/gif_zip/";
+
   document.getElementById("publish").innerHTML =
     "nvm use 16 && node publish send " + ad_name;
 

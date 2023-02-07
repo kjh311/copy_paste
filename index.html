@@ -25,7 +25,6 @@
     <!-- <div id="my-popup">Copied!</div> -->
 
     <div class="container text-center">
-      <!-- <label for="enter_ad_name"><h3>Enter Ad Name:</h3></label> -->
       <br />
       <div class="col-sm-12 d-flex flex-row justify-content-center">
         <input
@@ -236,6 +235,20 @@
                 data-clipboard-target="#publish-gif-static"
               >
                 Pull, Push, Publish, & Static <i class="fa fa-clipboard"></i>
+              </button>
+            </li>
+
+            <li>
+              <p id="make-gif" class="hide"></p>
+              <button
+                onclick="showPopUp()"
+                id="btn-make-gif"
+                type="button"
+                class="btn btn-info btn-clipboard"
+                data-clipboard-action="copy"
+                data-clipboard-target="#make-gif"
+              >
+                Make GIF and open <i class="fa fa-clipboard"></i>
               </button>
             </li>
           </ul>
