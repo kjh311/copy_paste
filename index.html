@@ -69,6 +69,51 @@
           oninput="myFunction()"
         />
       </div>
+
+      <ul class="d-flex flex-row justify-content-center">
+        <li>
+          <p id="first-pass" class="hide"></p>
+          <button
+            onclick="first_pass()"
+            id="btn-first-pass"
+            type="button"
+            class="btn btn-info commit-messages btn-clipboard btn-first-pass"
+            data-clipboard-action="copy"
+            data-clipboard-target="#first-pass"
+          >
+            "First Pass"
+          </button>
+        </li>
+
+        <li>
+          <p id="talia-notes" class="hide"></p>
+          <button
+            onclick="talia_notes()"
+            id="btn-talia-notes"
+            type="button"
+            class="btn btn-info commit-messages btn-clipboard btn-talia-notes"
+            data-clipboard-action="copy"
+            data-clipboard-target="#talia-notes"
+          >
+            "Talia Notes"
+          </button>
+        </li>
+
+        <li>
+          <p id="published" class="hide"></p>
+          <button
+            onclick="published()"
+            id="btn-published"
+            type="button"
+            class="btn btn-info commit-messages btn-clipboard btn-published"
+            data-clipboard-action="copy"
+            data-clipboard-target="#published"
+          >
+            "Published"
+          </button>
+        </li>
+      </ul>
+
       <hr />
       <div class="row text-center">
         <div class="col-md-6">

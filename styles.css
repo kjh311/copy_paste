@@ -12,7 +12,7 @@
 
   /* for center */
   position: fixed;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -53,6 +53,10 @@ input,
 h4,
 h3 {
   /* text-decoration: underline; */
+}
+
+.commit-messages {
+  font-size: 0.7em;
 }
 
 #enter_ad_name {

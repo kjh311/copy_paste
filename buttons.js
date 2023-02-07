@@ -443,6 +443,33 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-first-pass").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-first-pass").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-talia-notes").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-talia-notes").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-published").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-published").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-gif-static").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",
