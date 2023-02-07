@@ -36,6 +36,11 @@
   }
 }
 
+@font-face {
+  font-family: "Mochiy Pop One";
+  src: url("/fonts/MochiyPopOne-Regular.ttf");
+}
+
 h4,
 h3,
 li,
