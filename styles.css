@@ -77,8 +77,8 @@ ul {
 .hide {
   color: #fff;
   overflow: hidden;
-  max-height: 0.1px;
-  max-width: 0.1px;
+  max-height: 1px;
+  max-width: 1px;
 }
 .heading {
   text-decoration: underline;
