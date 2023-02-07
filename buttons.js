@@ -441,6 +441,7 @@ $(document).ready(function () {
     $("#btn-make-gif").css({
       "background-color": "#139ab5",
     });
+    console.log("pushed");
   });
 
   $("#btn-gif-static").click(function () {
