@@ -56,8 +56,6 @@ function myFunction() {
     custom_commit_message = "updates&quot";
   }
 
-  // alert(custom_commit_message);
-
   document.getElementById("build").innerHTML = "gulp --build " + ad_name;
 
   document.getElementById("rebuild").innerHTML =
