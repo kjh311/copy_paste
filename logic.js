@@ -80,6 +80,17 @@ function myFunction() {
     ad_name +
     " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
 
+  document.getElementById("push-legacy-static").innerHTML =
+    "git pull && git add . && git commit -m &quot" +
+    ad_name +
+    " " +
+    custom_commit_message +
+    " && git push && nvm use 16 && node publish send " +
+    ad_name +
+    " && yarn proof " +
+    ad_name +
+    " --legacy";
+
   document.getElementById("publish-gif-static").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
@@ -102,6 +113,9 @@ function myFunction() {
     ad_name +
     " && open -a &quotGoogle Chrome&quot review/review_html/index.html";
 
+  document.getElementById("legacy-static").innerHTML =
+    "yarn proof " + ad_name + " --legacy";
+
   document.getElementById("gif-static").innerHTML =
     "npm run proof 2 " +
     ad_name +
@@ -110,7 +124,7 @@ function myFunction() {
   document.getElementById("open-in-vs").innerHTML =
     "code -r src2/gd/" + ad_name + "/datafile.json";
 
-  document.getElementById("do-data").innerHTML = "node do_data";
+  document.getElementById("do-data").innerHTML = "nvm use 16 && node do_data";
 
   document.getElementById("pull").innerHTML = "git pull";
 

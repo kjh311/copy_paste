@@ -416,6 +416,24 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-legacy-static").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-legacy-static").css({
+      "background-color": "#139ab5",
+    });
+  });
+
+  $("#btn-push-legacy-static").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-push-legacy-static").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-static-name").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",
