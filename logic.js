@@ -98,7 +98,9 @@ function myFunction() {
     ad_name +
     ".pdf && yarn proof2 " +
     ad_name +
-    " --sendonly";
+    " --sendonly && rm ~/code/banner-gd3/proof_review/review/pdf/" +
+    ad_name +
+    ".pdf";
 
   document.getElementById("publish-gif-static").innerHTML =
     "git pull && git add . && git commit -m &quot" +
