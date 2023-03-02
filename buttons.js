@@ -416,6 +416,15 @@ $(document).ready(function () {
     });
   });
 
+  $("#btn-proof2").click(function () {
+    $(".btn").css({
+      "background-color": "#32D2F2",
+    });
+    $("#btn-proof2").css({
+      "background-color": "#139ab5",
+    });
+  });
+
   $("#btn-legacy-static").click(function () {
     $(".btn").css({
       "background-color": "#32D2F2",

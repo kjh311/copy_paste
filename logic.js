@@ -91,6 +91,15 @@ function myFunction() {
     ad_name +
     " --legacy";
 
+  document.getElementById("proof2").innerHTML =
+    "mv ~/Downloads/" +
+    ad_name +
+    ".pdf ~/code/banner-gd3/proof_review/review/pdf/ " +
+    ad_name +
+    ".pdf && yarn proof2 " +
+    ad_name +
+    " --sendonly";
+
   document.getElementById("publish-gif-static").innerHTML =
     "git pull && git add . && git commit -m &quot" +
     ad_name +
