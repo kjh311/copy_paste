@@ -94,7 +94,7 @@ function myFunction() {
   document.getElementById("proof2").innerHTML =
     "mv ~/Downloads/" +
     ad_name +
-    ".pdf ~/code/banner-gd3/proof_review/review/pdf/ " +
+    ".pdf ~/code/banner-gd3/proof_review/review/pdf/" +
     ad_name +
     ".pdf && yarn proof2 " +
     ad_name +
